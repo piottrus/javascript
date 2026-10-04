@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html> 
+         <body> 
+          <div style="color:green;font-size:31px;"> 
+            <script language="JavaScript"> 
+// Piotr Wróbel  2P   17.09.2026
+// Zadanie 11  
+              var D1_wrob=prompt("Data1>Data2 Data1=",""); 
+              var G1_wrob=prompt("Godzina1>Godzina2 Godzina1=","");
+              var D2_wrob=prompt("Data2=",""); 
+              var G2_wrob=prompt("Godzina2=","");
+              var sekund; 
+              var a=parseFloat(D1_wrob); 
+              var b=parseFloat(D2_wrob); 
+              var c=parseFloat(G1_wrob); 
+              var d=parseFloat(G2_wrob); 
+                sekund=((a-b)*24+c-d)*3600; 
+              document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>"); 
+                function okno_zamknij() 
+                 { 
+                   window.close() 
+                 } 
+              </script> 
+            </div> 
+          <input type="button" value="zamknij okno" onclick="okno_zamknij()"/> 
+        </body> 
+       </html> 

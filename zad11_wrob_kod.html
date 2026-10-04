@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrobel 2P</title>
+</head>
+<body>
+ <textarea cols="90" rows="24"> 
+        <html> 
+         <body> 
+          <div style="color:green;font-size:31px;"> 
+            <script language="JavaScript"> 
+// Piotr Wróbel  2P   17.09.2026
+// Zadanie 11  
+              var D1_wrob=prompt("Data1=",""); 
+              var D2_wrob=prompt("Data2=",""); 
+              var sekund; 
+              var a=parseFloat(D1_wrob); 
+              var b=parseFloat(D2_wrob); 
+                sekund=(a-b)*24*60*60; 
+              document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>"); 
+                function okno_zamknij() 
+                 { 
+                   window.close() 
+                 } 
+              </script> 
+            </div> 
+          <input type="button" value="zamknij okno" onclick="okno_zamknij()"/> 
+        </body> 
+       </html> 
+      </textarea> 
+    
+</body>
+</html>

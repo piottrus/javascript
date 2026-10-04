@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+ <head>
+ <title> Wrobel 2P </title>
+ <meta charset="utf-8">
+ </head>
+<body>
+ <div style="color:navy;font-size:40px;">
+ <script language="JavaScript">
+ var A=parseFloat(prompt("Podaj pierwszą liczbę A="," "));
+ var B=parseFloat(prompt("Podaj drugą liczbę B="," "));
+document.write("A=" + A + " " + "B=" + B + "<br><br>");
+
+var A2 = A * A;      
+var A3 = A2 * A;      
+var B2 = B * B;       
+var B3 = B2 * B;      
+            
+var wynik = A3 + 3 * A2 * B + 3 * A * B2 + B3;
+
+document.write("(" + A + " + " + B + ")^3 = " + A + "^3 + 3*((" + A + ")^2)*(" + B + ") + 3*(" + A + ")*((" + B + ")^2) + " + B + "^3 = ");
+document.write(A3 + " + " + 3 * A2 * B + " + " + 3 * A * B2 + " + " + B3 + " =" + wynik);
+</script>
+</div>
+</body>
+</html>
