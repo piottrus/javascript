@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrobel 2P</title>
+</head>
+<body>
+ <textarea cols="90" rows="24"> 
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+  function AB_wro() 
+   { 
+ var Ax= parseFloat(document.getElementById('dlugoscAx').value); 
+ var Ay= parseFloat(document.getElementById('dlugoscAy').value); 
+ var Bx= parseFloat(document.getElementById('dlugoscBx').value); 
+ var By= parseFloat(document.getElementById('dlugoscBy').value);
+ var AB = Math.sqrt(Math.pow((Ax - Bx),2) +Math.pow((Ay - By), 2));
+        document.getElementById("nazwa").innerHTML ="Punkt AB = "+AB.toFixed(2)+" cm^2";  
+   } 
+   
+ function BC_wro() 
+   { 
+ var Bx= parseFloat(document.getElementById('dlugoscBx').value); 
+ var By= parseFloat(document.getElementById('dlugoscBy').value); 
+ var Cx= parseFloat(document.getElementById('dlugoscCx').value); 
+ var Cy= parseFloat(document.getElementById('dlugoscCy').value);
+ var BC = Math.sqrt(Math.pow((Bx - Cx),2) +Math.pow((By - Cy), 2));
+        document.getElementById("nazwa").innerHTML ="Punkt BC = "+BC.toFixed(2)+" cm^2";  
+   } 
+
+   function AC_wro() 
+   { 
+ var Ax= parseFloat(document.getElementById('dlugoscAx').value); 
+ var Ay= parseFloat(document.getElementById('dlugoscAy').value); 
+ var Cx= parseFloat(document.getElementById('dlugoscCx').value);
+ var CY= parseFloat(document.getElementById('dlugoscCy').value); 
+ var AC = Math.sqrt(Math.pow((Ax - Cx),2) +Math.pow((Ay - Cy), 2));
+        document.getElementById("nazwa").innerHTML ="Punkt AC = "+AC.toFixed(2)+" cm^2"; 
+   } 
+ </script> 
+  <h1>Punkty trójkąta</h1><br><br> 
+<b>Punkt A</b>, podaj x: <input type="text" id="dlugoscAx" value=""> cm<br>
+                podaj y: <input type="text" id="dlugoscAy" value=""> cm<br><br><br> 
+<b>Punkt B</b>, podaj x <input type="text" id="dlugoscBx" value=""> cm<br> 
+                podaj y: <input type="text" id="dlugoscBy" value=""> cm<br><br><br> 
+<b>Punkt C</b>, podaj x<input type="text" id="dlugoscCx" value=""> cm<br> 
+                podaj y: <input type="text" id="dlugoscCy" value=""> cm<br><br><br>  
+
+  <input type="button" name="ab" value="Oblicz AB" Onclick="AB_wro()"><br><br> 
+  <input type="button" name="bc" value="Oblicz BC" Onclick="BC_wro()"><br><br> 
+  <input type="button" name="ac" value="Oblicz AC" Onclick="AC_wro()"><br><br> 
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+</body> 
+</html>
+      </textarea> 
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>
+        Przykład obliczenia V i Pc walca
+    </title>
+    <script language="JavaScript">
+        function Pole_wrobel(a_wro, b_wro) {
+            a_wro=parseFloat(a_wro)
+            b_wro=parseFloat(b_wro)
+            pole_wro=(a_wro*b_wro)
+            document.getElementsByName('pole')[0].value = pole_wro.toFixed(2);
+            alert("Pole=" + pole_wro.toFixed(2) + " cm^2");
+            pokaz1.innerHTML = "P=" + pole_wro.toFixed(2) + "cm^2";
+
+        }
+        function Obwod_wrobel(a_wro, b_wro) {
+            a_wro=parseFloat(a_wro)
+            b_wro=parseFloat(b_wro)
+            obwod_wro=(a_wro*2+b_wro*2)
+            document.getElementsByName('obw')[0].value = obwod_wro.toFixed(2);
+            alert("Obwód=" + obwod_wro.toFixed(2) + " cm");
+            pokaz2.innerHTML = "Obw=" + obwod_wro.toFixed(2) + "cm";
+        }
+    </script>
+</head>
+
+<body>
+    Pobliczanie V i Pc walca
+    <br> <br>
+    <form name="formularz" action="..." onsubmit="Pole_wrobel(this.a_dana_wro.value,this.b_dana_wro.value);
+    Obwod_wrobel(this.a_dana_wro.value,this.b_dana_wro.value);return false">
+        Podaj a=
+        <input size="6" name="a_dana_wro">
+        Podaj b=
+        <input size="6" name="b_dana_wro">
+        <br> <br>
+        <input TYPE="submit" Value="oblicz">
+        <br> <br>
+        Pole=
+        <input size="6" name="pole">
+        Obwód=
+        <input size="6" name="obw">
+    </form>
+    <table>
+        <tr id="pokaz1"></tr>
+        <tr id="pokaz2"></tr>
+    </table>
+</body>
+</html>

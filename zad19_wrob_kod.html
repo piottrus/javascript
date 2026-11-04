@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrobel 2P</title>
+</head>
+<body>
+ <textarea cols="90" rows="24"> 
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+  function pole_wrobel() 
+   { 
+ var a_wro= parseFloat(document.getElementById('dlugosc').value); 
+ var b_wro= a_wro*a_wro; 
+        document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_wro.toFixed(2)+" cm^2";  
+   } 
+  function obwod_wrobel() 
+   { 
+ var a_wro= parseFloat(document.getElementById('dlugosc').value); 
+ var b_wro= 4*a_wro; 
+        document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_wro.toFixed(2)+" cm";  
+   } 
+ </script> 
+  <h1>Wszystko o KWADRACIE</h1><br><br> 
+  Podaj długośd boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br> 
+  <input type="button" name="pole" value="Oblicz pole" Onclick="pole_wrobel()"><br><br> 
+  <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_wrobel()"><br><br> 
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+</body> 
+</html> 
+</textarea> 
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>   
+<head>    
+<title> proste obliczenia</title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:red;font-size:50px;"> 
+<script language="JavaScript"> 
+var x1=prompt("podaj x1 =",""); 
+var x2=prompt("podaj x2=","");
+
+x1_rad = ((Math.PI * x1)/180).toFixed(2);
+x2_rad = ((Math.PI * x2)/180).toFixed(2);
+
+y1 = (3 * Math.pow(x1, (5/7))).toFixed(2);
+y2 = (2 * Math.cos(x1_rad) + 3 * Math.sin(x1_rad)).toFixed(2);
+y3 = (Math.cbrt((Math.pow(x1, 5) + 2 * Math.pow(x2, 4))) * Math.abs(x1 - x2)).toFixed(2);
+
+document.write("x1 = " + x1 + "&nbsp&nbsp&nbsp&nbsp&nbsp" + " x2 = " + x2 + "<br><br>"); 
+document.write("x1(w rad) = " + x1_rad + "<br>" + "x2(w rad) = " + x2_rad); 
+document.write("<br><br>" + "y1 = " + y1);
+document.write("<br>" + "y2 = " + y2);
+document.write("<br>" + "y3 = " + y3);
+</script> 
+</div> 
+</body> 
+</html> 

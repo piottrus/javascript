@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrobel 2P</title>
+</head>
+<body>
+ <textarea cols="90" rows="24"> 
+    <!DOCTYPE html>   
+<head>    
+<title> proste obliczenia</title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:navy;font-size:50px;"> 
+<script language="JavaScript"> 
+var N0_wro = prompt("Podaj N0 [sztuk]: ","");
+var t_wro = prompt("Podaj t [lat] ","");
+var T05_wro = prompt("Podaj T1/2 [lat]: ","");
+
+lambda_wro = (Math.LN2 / T05_wro);
+N_wro = Math.pow(N0_wro, (lambda_wro * t_wro));
+
+document.write("N0 = " + N0_wro + "<br>");
+document.write("t = " + t_wro + "<br>");
+document.write("T1/2 = " + T05_wro + "<br><br>");
+
+document.write("Lambda [1/rok] = " + lambda_wro + "<br>");
+document.write("N [sztuk] = " + N_wro + "<br>");
+</script>
+</div> 
+</body>
+</html> 
+</textarea> 
+    
+</body>
+</html>
